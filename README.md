@@ -2,25 +2,45 @@
 ## Code Structure
 
 ├── configs/                  # Configuration files
+
 │   └── base.yaml             # Main training configuration
+
 ├── core/                     # Core compression components
+
 │   ├── entropy_coder.py      # Arithmetic coding implementation
+
 │   ├── hyper_prior.py        # Hyperprior network
+
 │   └── avrpm.py              # Adaptive voxel residual prediction module
+
 ├── data/
+
 │   ├── ivfb_loader.py        # IVFBDataset implementation
+
 │   └── preprocess.py         # PLY to NPZ conversion
+
 ├── models/
+
 │   ├── generator.py          # PCACGenerator (main compression network)
+
 │   └── discriminator.py      # PointCloudDiscriminator
+
 ├── losses/                   # Loss functions
+
 │   ├── adversarial.py        # GAN implementation
+
 │   └── rate_distortion.py    # Rate-distortion loss
+
 ├── utils/
+
 │   ├── metrics.py            # PSNR/SSIM/BPP calculations
+
 │   └── transforms.py         # Color space conversions
+
 ├── train.py                  # Main training script
+
 └── evaluate.py               # Model evaluation script
+
 └── dataset_gen.py             # Shapenet+CoCo
 
 ## Getting Started
