@@ -1,0 +1,24 @@
+# 基础训练配置
+training:
+  batch_size: 32
+  epochs: 100
+  lambda_gp: 10.0    
+  lambda_rd: 0.01    
+  lr_g: 0.0001         
+  lr_d: 0.0004         
+
+model:
+  bottleneck_channels: 256
+  latent_channels: 256
+  use_hyperprior: True
+  quantization_bins: 256
+
+dataset:
+  root_dir: "/data/yourpath/"
+  color_space: "YUV" 
+  voxel_size: 0.01
+
+minkowski:
+  tensor_stride: 1
+  kernel_size: 3
+  region_type: 'HYPER_CUBE'
