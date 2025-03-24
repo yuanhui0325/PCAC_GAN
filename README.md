@@ -1,4 +1,8 @@
 # PCAC_GAN
+During the process of machine updates and migration, the original code was unfortunately lost. This version is a re-implemented codebase based on the original design concepts and experimental results. While we have made every effort to maintain consistency with the original code, there may be slight discrepancies in the results due to differences in certain implementation details.
+
+
+
 ## Code Structure
 
 ├── configs/                  # Configuration files
@@ -73,6 +77,10 @@ python train.py --config configs/base.yaml \
     --lr_d 0.0004
 
 Evaluation
+
+
+models: https://pan.baidu.com/s/1-5TRTShyW5pYBSNiDRGNoA  8a97 
+
 
 python evaluate.py \
     --weights path/to/checkpoint \
